@@ -20,12 +20,14 @@ body:
       required: true
   - type: textarea
     id: description
-    label: Provides additional details that will be provided along with the proposal name
+    attributes:
+      label: Provides additional details that will be provided along with the proposal name
     validations:
       required: false
   - type: input
     id: submitter
-    label: E-mail address of submitter
+    attributes:
+      label: E-mail address of submitter
     validations:
       required: true
   - type: dropdown
@@ -201,8 +203,8 @@ body:
     attributes:
       label: Were HPE employees or contractors the sole contributors of the code to be open sourced?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: textarea
@@ -213,8 +215,8 @@ body:
     attributes:
       label: Has any HPE intellectual property (such as trade secrets, patents, trademarks, etc.) been used in the creation of this code?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: dropdown
