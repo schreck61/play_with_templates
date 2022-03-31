@@ -3,239 +3,239 @@ description: Submit an upstream (i.e., contribution) proposal for a new open sou
 title: "[Upstream New]: "
 labels: ["upstream", "new"]
 assignees:
-- ria-schalnat
+  - schreck61
 body:
-	- type: markdown
-	  attributes:
-	  	value: |
-	  	  ## Upstream Proposal for a new open source project
-	  	  Please complete all sections of this form.  For more information on upstream fields, see 
-	  	  [the upstream process](https://opensource.corp.hpecorp.net/osrp_process_upstream.html)
-	- type: input
-	  id: name
-	  attributes:
-	  	label: Proposal name
-	  	description: This is the name of the proposal (typically the name the project will be known by within HPE)
-	  validations:
-	    required: true
-	- type: textarea
-	  id: description
-	  label: Provides additional details that will be provided along with the proposal name
-	  validations:
-	    required: false
-	- type: input
-	  id: submitter
-	  label: E-mail address of submitter
-	  validations:
-	  	required: true
-	- type: dropdown
-	  id: bu
-	  attributes:
-	    label: Select business unit
-	    options:
-	      - APAC
-		  - as a Service Finance
-		  - Benefit Fund Investment and Treasury
-		  - Brand Experience and Mktg
-		  - BU HRBP Services
-		  - Category Management Team
-		  - Central Europe, Russia, Turkey n Africa
-		  - Central Mktg HQ
-		  - Chief Financial Officer
-		  - CMS Finance
-		  - Comm and Media Solutions
-		  - Compensation
-		  - Compute Business G
-		  - Compute Finance
-		  - Controllership Finance
-		  - Corporate Affairs
-		  - Corporate Development
-		  - Corporate Strategy
-		  - Country HR
-		  - Customer Experience and Quality
-		  - Customer Ops
-		  - DACH
-		  - Digital Demand
-		  - Digital Experience and Tech
-		  - Edge HR
-		  - EG APJ
-		  - EG Chief Technology Office
-		  - EG EMEA
-		  - EG Latin America
-		  - EG Supply Chain
-		  - Enterprise Group Sales
-		  - Exec.Office
-		  - FPnA  GFF
-		  - France
-		  - Functional HR
-		  - Geo Marketing
-		  - GLE Platform CTO
-		  - GLE Pltf Dev SW Eng
-		  - Global Benefits
-		  - Global Communications
-		  - Global IT
-		  - Global Operations
-		  - Global Ops Finance
-		  - Global Pricing Organization
-		  - Global Procurement
-		  - Global Real Estate
-		  - Global Security
-		  - Global Security Services
-		  - Global Workplace
-		  - GreenLake
-		  - High Perf Comp and Mission Critical Sys
-		  - HP  Financial Services
-		  - HPC and AI GBU
-		  - HPEFS Finance
-		  - HPFS Human Resources
-		  - HPN Aruba
-		  - HQ
-		  - HR Transformation Office
-		  - Human Resources HQ
-		  - India
-		  - Integrated Experiences
-		  - Intelligent Edge Finance
-		  - Internal Audit ERM Group
-		  - Inv Relations
-		  - Japan
-		  - Legal
-		  - North America
-		  - North West Europe
-		  - Other CMP
-		  - Other EGR
-		  - Other FIN
-		  - Other HR
-		  - Other LAB
-		  - Other LEGO
-		  - Other OP
-		  - Other OST
-		  - People Analytics and Employee E
-		  - People Operations
-		  - Pointnext Global Shared Delivery
-		  - Product to Market
-		  - Sales Comp and Readiness
-		  - Sales Finance
-		  - Separation
-		  - Service Portfolio Product Management
-		  - Services Client Teams and Global COEs
-		  - Services Finance
-		  - Services Reliabilty Eng
-		  - Software Business Organization
-		  - Southern Europe
-		  - Storage Finance
-		  - Storage GBU
-		  - Strategic Customer Engagement
-		  - Strategy and Governance
-		  - Supply Chain Pointnext
-		  - Systems and Enablement
-		  - Talent Transformation
-		  - Tax Group
-		  - UKI MESA
-		  - Worldwide Sales Enablement
-		  - WW Channels and Alliances
-		  - WW Customer Solution Center
-		  - WW Presales
-		  - WW Sales Groups
-		validations:
-	  	  required: true
-	- type: markdown
-	  attributes:
-	    value: Please provide the requested information about the new, proposed project below.
-	- type: input
-	  id: intended_name
-	  attributes:
-	  	label: Intended Project Name
-	  	description: Provide the name of the project as it will be known to the outside world
-	  validations:
-	    required: true
-	- type: input
-	  id: suggested_url
-	  attributes:
-	    label: Suggested URL
-	    description: Where you will make this code available. Please include a suggested URL, even if it doesn't currently exist
-	  validations:
-	    required: true
-	- type: input
-	  id: license
-	  attributes:
-	    label: Intended license
-	    description: Please indicate the license you intend to use for the code or "Undecided" if you would like assistance from the OSRB
-	  validations:
-	    required: true
-	- type: textarea
-	  id: oss_description
-	  attributes:
-	    label: Description of the new open source project
-	    description: A one-paragraph description of the open source project
-	  validations:
-	    required: true
-	- type: textarea
-	  id: governance_plans
-	  attributes:
-	    label: Plans for governance of the project
-	    description: Please indicate what, if any, plans you have regarding governance of the project (e.g., who will review code, whether you will require a contributor license agreement, etc.)
-	  validations:
-	    required: false
-    - type: markdown
-	  attributes:
-	    value: Scope of the proposed contribution
-	- type: textarea
-	  attributes:
-	    label: Functional description of the code
-	    description: Please describe any interesting algorithmic functionality, and what is novel, new, or different in the proposed functionality.
-	  validations:
-	    required: true
-	- type: input
-	  attributes:
-	    label: E-mail address for the HPE manager who approves this contribution
-	    description: Please provide the e-mail address of the HPE approving manager.  This is typically a director or above.
-	  validations:
-	    required: true
-	- type: textarea
-	  attributes:
-	    label: Why does the business want to release this code?
-	    description: Please explain the rationale the business is providing for open sourcing this code.
-	  validations:
-	    required: true
-	- type: dropdown
-	  attributes:
-	    label: Were HPE employees or contractors the sole contributors of the code to be open sourced?
-	    options:
-	      - Yes
-	      - No
-	  validations:
-	    required: true
-	- type: textarea
-	  attributes:
-	    label: If no, who else contributed?
-	    description: Please provide a list of other contributors to the code.
-    - type: dropdown
-      attributes:
-        label: Has any HPE intellectual property (such as trade secrets, patents, trademarks, etc.) been used in the creation of this code?
-        options:
-          - Yes
-          - No
-      validations:
+  - type: markdown
+    attributes:
+      value: |
+        ## Upstream Proposal for a new open source project
+        Please complete all sections of this form.  For more information on upstream fields, see 
+        [the upstream process](https://opensource.corp.hpecorp.net/osrp_process_upstream.html)
+  - type: input
+    id: name
+    attributes:
+      label: Proposal name
+      description: This is the name of the proposal (typically the name the project will be known by within HPE)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    label: Provides additional details that will be provided along with the proposal name
+    validations:
+      required: false
+  - type: input
+    id: submitter
+    label: E-mail address of submitter
+    validations:
+      required: true
+  - type: dropdown
+    id: bu
+    attributes:
+      label: Select business unit
+      options:
+        - APAC
+        - as a Service Finance
+        - Benefit Fund Investment and Treasury
+        - Brand Experience and Mktg
+        - BU HRBP Services
+        - Category Management Team
+        - Central Europe, Russia, Turkey n Africa
+        - Central Mktg HQ
+        - Chief Financial Officer
+        - CMS Finance
+        - Comm and Media Solutions
+        - Compensation
+        - Compute Business G
+        - Compute Finance
+        - Controllership Finance
+        - Corporate Affairs
+        - Corporate Development
+        - Corporate Strategy
+        - Country HR
+        - Customer Experience and Quality
+        - Customer Ops
+        - DACH
+        - Digital Demand
+        - Digital Experience and Tech
+        - Edge HR
+        - EG APJ
+        - EG Chief Technology Office
+        - EG EMEA
+        - EG Latin America
+        - EG Supply Chain
+        - Enterprise Group Sales
+        - Exec.Office
+        - FPnA  GFF
+        - France
+        - Functional HR
+        - Geo Marketing
+        - GLE Platform CTO
+        - GLE Pltf Dev SW Eng
+        - Global Benefits
+        - Global Communications
+        - Global IT
+        - Global Operations
+        - Global Ops Finance
+        - Global Pricing Organization
+        - Global Procurement
+        - Global Real Estate
+        - Global Security
+        - Global Security Services
+        - Global Workplace
+        - GreenLake
+        - High Perf Comp and Mission Critical Sys
+        - HP  Financial Services
+        - HPC and AI GBU
+        - HPEFS Finance
+        - HPFS Human Resources
+        - HPN Aruba
+        - HQ
+        - HR Transformation Office
+        - Human Resources HQ
+        - India
+        - Integrated Experiences
+        - Intelligent Edge Finance
+        - Internal Audit ERM Group
+        - Inv Relations
+        - Japan
+        - Legal
+        - North America
+        - North West Europe
+        - Other CMP
+        - Other EGR
+        - Other FIN
+        - Other HR
+        - Other LAB
+        - Other LEGO
+        - Other OP
+        - Other OST
+        - People Analytics and Employee E
+        - People Operations
+        - Pointnext Global Shared Delivery
+        - Product to Market
+        - Sales Comp and Readiness
+        - Sales Finance
+        - Separation
+        - Service Portfolio Product Management
+        - Services Client Teams and Global COEs
+        - Services Finance
+        - Services Reliabilty Eng
+        - Software Business Organization
+        - Southern Europe
+        - Storage Finance
+        - Storage GBU
+        - Strategic Customer Engagement
+        - Strategy and Governance
+        - Supply Chain Pointnext
+        - Systems and Enablement
+        - Talent Transformation
+        - Tax Group
+        - UKI MESA
+        - Worldwide Sales Enablement
+        - WW Channels and Alliances
+        - WW Customer Solution Center
+        - WW Presales
+        - WW Sales Groups
+    validations:
         required: true
-    - type: dropdown
-      attributes:
-        label: Please provide an estimate of how many lines of code you plan to contribute
-        options:
-          - 1 - 999
-          - 1,000 - 4,999
-          - 5,000 - 9,999
-          - 10,000 - 19,999
-          - 20,000 - 49,999
-          - 50,000+
-      validations:
-        required: true
-    - type: input
-      attributes:
-        label: What is the expected timeframe for release of this code?
-        description: If known, please specify when you expect to upstream this code.
-      validations:
-        required: false
-    - type: textarea
-      attributes:
-        label: Please provide any additional notes for the request
-        description: Add any additional information you believe would be helpful to reviewers.
+  - type: markdown
+    attributes:
+      value: Please provide the requested information about the new, proposed project below.
+  - type: input
+    id: intended_name
+    attributes:
+      label: Intended Project Name
+      description: Provide the name of the project as it will be known to the outside world
+    validations:
+      required: true
+  - type: input
+    id: suggested_url
+    attributes:
+      label: Suggested URL
+      description: Where you will make this code available. Please include a suggested URL, even if it doesn't currently exist
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Intended license
+      description: Please indicate the license you intend to use for the code or "Undecided" if you would like assistance from the OSRB
+    validations:
+      required: true
+  - type: textarea
+    id: oss_description
+    attributes:
+      label: Description of the new open source project
+      description: A one-paragraph description of the open source project
+    validations:
+      required: true
+  - type: textarea
+    id: governance_plans
+    attributes:
+      label: Plans for governance of the project
+      description: Please indicate what, if any, plans you have regarding governance of the project (e.g., who will review code, whether you will require a contributor license agreement, etc.)
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: Scope of the proposed contribution
+  - type: textarea
+    attributes:
+      label: Functional description of the code
+      description: Please describe any interesting algorithmic functionality, and what is novel, new, or different in the proposed functionality.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: E-mail address for the HPE manager who approves this contribution
+      description: Please provide the e-mail address of the HPE approving manager.  This is typically a director or above.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Why does the business want to release this code?
+      description: Please explain the rationale the business is providing for open sourcing this code.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Were HPE employees or contractors the sole contributors of the code to be open sourced?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: If no, who else contributed?
+      description: Please provide a list of other contributors to the code.
+  - type: dropdown
+    attributes:
+      label: Has any HPE intellectual property (such as trade secrets, patents, trademarks, etc.) been used in the creation of this code?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Please provide an estimate of how many lines of code you plan to contribute
+      options:
+        - 1 - 999
+        - 1,000 - 4,999
+        - 5,000 - 9,999
+        - 10,000 - 19,999
+        - 20,000 - 49,999
+        - 50,000+
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: What is the expected timeframe for release of this code?
+      description: If known, please specify when you expect to upstream this code.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Please provide any additional notes for the request
+      description: Add any additional information you believe would be helpful to reviewers.
