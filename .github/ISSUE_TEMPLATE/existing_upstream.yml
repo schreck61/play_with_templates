@@ -18,13 +18,15 @@ body:
     validations:
       required: true
   - type: textarea
-    id: description
-    label: Provides additional details that will be provided along with the proposal name
+    attributes:
+      id: description
+      label: Provides additional details that will be provided along with the proposal name
     validations:
       required: false
   - type: input
-    id: submitter
-    label: E-mail address of submitter
+    attributes:
+      id: submitter
+      label: E-mail address of submitter
     validations:
       required: true
   - type: dropdown
