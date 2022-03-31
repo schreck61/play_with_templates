@@ -162,8 +162,8 @@ body:
     attributes:
       label: Does the project have a contributor license agreement ("CLA")?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Unsure
     validations:
       required: true
@@ -192,8 +192,8 @@ body:
     attributes:
       label: Is this an HPE-controlled project?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Unsure
     validations:
       required: true
@@ -201,8 +201,8 @@ body:
     attributes:
       label: Were HPE employees or contractors the sole contributors of the code to be open sourced?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: textarea
@@ -213,8 +213,8 @@ body:
     attributes:
       label: Has any HPE intellectual property (such as trade secrets, patents, trademarks, etc.) been used in the creation of this code?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: dropdown
